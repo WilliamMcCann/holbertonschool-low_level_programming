@@ -7,8 +7,9 @@ void printpositive (int n);
 called "n", gives no output*/
 void print_number(int n)
 {
-  :x	/*hard-coding handles a zero*/
+  /*hard-coding for zero*/
 	if (n == 0){
+				/*prints zero*/
                 print_char('0');
                 }
 

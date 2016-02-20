@@ -1,3 +1,4 @@
+/*header to include print_char*/
 #include "my_functions.h"
 /*prototype for the printpositive function*/ 
 void printpositive (int n);
