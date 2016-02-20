@@ -11,9 +11,9 @@ int main(void)
    long int f = 0, s = 1, n, c;
  
  	/*for loop initializing c at zero,
- 	running while c is less than fifty,
+ 	running while c is less than 49,
  	and incrementing c by one*/
-   for ( c = 0 ; c < 50 ; c++ )
+   for ( c = 0 ; c <= 48 ; c++ )
    {  
    	  /*if c is less than or equal to one*/ 		
       if ( c <= 1 )
@@ -32,8 +32,12 @@ int main(void)
          s = n;
       }
       /*prints int n*/
-      printf("%li\n",n);
-   }
+      printf("%li, \n",n);
+    }
+      /*prints the fiftieth int; hard-coded so
+      there's no comma or space after it*/	
+      printf("7778742049\n");	
+   
  	/*returns zero*/
    return 0;
 }
