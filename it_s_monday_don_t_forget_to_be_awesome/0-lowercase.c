@@ -1,9 +1,9 @@
 /*function takes char c and passes a char*/
-char uppercase(char c){
+char lowercase(char c){
 
 	/*if statement capture all ASCII chars
-	including and between "a" (ASCII 97) 
-	and "z" (ASCII 122)*/
+	including and between "A" (ASCII 65) 
+	and "z" (ASCII 90)*/
 	if (c <= 122 && c >= 97){
 		/*subtracts 32 from the ASCII
 		value of the char, aligning the
