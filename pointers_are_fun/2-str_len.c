@@ -1,14 +1,11 @@
-int str_len(char *str);
+int str_len(char *s);
 
-int str_len(char *str){
+int str_len(char *s){
 	
-	char *str;
-    int i;
+    	int i;
 	
-	while(*str != 0){
-		i++;
-        &str += 4;
-    }
-    return (0);
+	for (i=0; *(s+i) != '\0'; i++){}
+  
+    return (i);
 }
 
