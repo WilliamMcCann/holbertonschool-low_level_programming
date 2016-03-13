@@ -1,7 +1,16 @@
 #include "my_functions.h"
 void print_array(int *a, int n);
-void printpositive (int n);
-void print_number(int n);
+void my_printpositive (int n);
+void my_print_number(int n);
+#include <unistd.h>
+
+int print_char(char c)
+{
+  return (write(1, &c, 1));
+}
+
+
+
 
 void print_array(int *a, int n)
 {
@@ -9,7 +18,7 @@ void print_array(int *a, int n)
 
   for (x = 0; x < n ; x++) {
       /*if (*(a+x) < *(a+n)) {*/
-        print_number(*(a+x));
+        my_print_number(*(a+x));
         if (x < n-1){
           print_char(',' + 0);
           print_char(' ' + 0);
@@ -21,7 +30,7 @@ void print_array(int *a, int n)
 
 
 
-  void print_number(int n)
+  void my_print_number(int n)
   {
   	/*hard-coding handles a zero*/
   	if (n == 0){
@@ -38,7 +47,7 @@ void print_array(int *a, int n)
           print_char('-');
   /*runs 214748364 through the printpositive function so it
   can be printed*/
-          printpositive(214748364);
+          my_printpositive(214748364);
    /*hard-coding to print the final 8 of -2147483648 because
    without truncating the digits the number is larger than
    the ints the function can handle*/
@@ -49,7 +58,7 @@ void print_array(int *a, int n)
       if (n > 0){
   /*sends all positive numbers into the printpositive
   function*/
-  	   printpositive(n);
+  	   my_printpositive(n);
       }
 
    /*loop involves all negative numbers from zero to -2147483648*/
@@ -60,11 +69,11 @@ void print_array(int *a, int n)
    /*prints minus sign*/
   		print_char('-');
   /*runs number through printpositive function*/
-          printpositive(n);
+          my_printpositive(n);
           }
   }
   /*the printpositive function*/
-  void printpositive (int n){
+  void my_printpositive (int n){
   /*declares all variables*/
           int g, p, power, count, ncopy;
   /*copies the value of "n" into "ncopy" to preserve

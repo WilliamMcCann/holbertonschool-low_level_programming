@@ -1,5 +1,7 @@
 char *nconcat_strings(char *dest, const char *src, int n);
 
+/*function securely combines two strings, using the length of source
+to control buffer overflow*/
 char *nconcat_strings(dst, src, n)
 	char *dst;
 	const char *src;

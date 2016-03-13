@@ -1,5 +1,7 @@
 int strings_compare(char *s1, const char *s2);
 
+/*function compares two strings and outputs an int that tells the
+diff between the ASCII values*/
 int strings_compare(char *s1, const char *s2)
 {
     while (*s1 == *s2++)

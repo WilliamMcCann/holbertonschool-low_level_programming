@@ -1,5 +1,6 @@
 char *string_copy(char *dest, const char *src);
 
+/*function copies a string*/
 char *string_copy(char *dest, const char *src)
 {
     char *s = dest;
