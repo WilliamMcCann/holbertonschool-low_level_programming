@@ -1,3 +1,4 @@
+/*function prints all lower case letters as upper case*/
 char *uppercase_string(char *n){
 
   int i;
