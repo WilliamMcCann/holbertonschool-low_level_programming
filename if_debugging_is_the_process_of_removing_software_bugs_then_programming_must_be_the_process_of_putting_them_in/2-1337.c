@@ -1,3 +1,4 @@
+/*function swaps numbers for letter into standard leet-speak*/
 char *leet(char *z){
 int j;
 for(j=0; z[j] != '\0'; j++) {
