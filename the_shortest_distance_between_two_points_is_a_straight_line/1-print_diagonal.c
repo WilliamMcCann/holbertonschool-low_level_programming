@@ -1,5 +1,6 @@
 int print_char(char c);
 
+/*prints a diagonal line as many slashes as the input*/
 void print_diagonal(int n){
   int i, j;
 
