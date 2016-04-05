@@ -6,7 +6,7 @@ int my_function(int n, int d){
   if (n % d == 0){
     return 0;
   }
-        return my_function(n, d+1);
+  return my_function(n, d+1);
   }
 
 

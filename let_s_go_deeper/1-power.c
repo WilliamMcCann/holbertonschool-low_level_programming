@@ -9,6 +9,5 @@ int power(int x, int y){
   }
   else {
     return (x*power(x,y-1));
-
-  }
+    }
 }
