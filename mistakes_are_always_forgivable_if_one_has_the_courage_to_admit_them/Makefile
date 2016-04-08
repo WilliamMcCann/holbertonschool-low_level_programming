@@ -12,6 +12,6 @@ all: 2-calculator
 	$(OBJECTS): $(SOURCES)
 
 	clean:
-		rm $(OBJECTS)
+		rm -f $(OBJECTS)
 
 	re:	$(OBJECTS)
