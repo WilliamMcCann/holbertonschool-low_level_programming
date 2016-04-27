@@ -1,5 +1,6 @@
 int print_char(char c);
 
+/*prints all the numbers of base 16*/
 void print_base16(void)
 {
    int x;

@@ -1,5 +1,6 @@
 int print_char(char c);
 
+/*function that prints the alphabet, in lowercase*/
 void print_alphabet(void)
 {
    int x;

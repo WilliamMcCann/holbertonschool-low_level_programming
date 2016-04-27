@@ -1,5 +1,6 @@
 int print_char(char c);
 
+/*display the addition of 2 arrays starting from the last item to the first*/
 int main(void)
 {
    int a[5] = { 0, 1, 2, 4, 1 };
