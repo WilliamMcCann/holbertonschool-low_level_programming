@@ -6,7 +6,7 @@ int print_char(char c)
 }
 
 /*prints out all arguments passed via the command line*/
-void main (int argc, char **argv)
+int main (int argc, char **argv)
 {
   int i;
   int j;
@@ -19,13 +19,14 @@ void main (int argc, char **argv)
   while (k > 0)
   {
     j = 0;
-    while (argv[i][j] != '\0')
+    while (argv[k - 1][j] != '\0')
     {
-      print_char(argv[i][j]);
+      print_char(argv[k - 1][j]);
       j++;
     }
     print_char('\n');
     k--;
     i--;
   }
+  return (0);
 }
