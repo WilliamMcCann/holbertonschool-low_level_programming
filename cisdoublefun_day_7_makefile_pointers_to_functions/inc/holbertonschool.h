@@ -1,0 +1,18 @@
+int print_char(char);
+void positive_or_not(int);
+void print_number(int);
+int absolute(int);
+char uppercase(char);
+char lowercase(char);
+int first_digit(int);
+void swap_int(int *, int *);
+int str_len(char *);
+void print_string(char *);
+void reverse_string(char *);
+int string_to_integer(char *);
+void print_array(int *, int);
+int strings_compare(char *, const char *);
+char *uppercase_string(char *);
+char *cap_string(char *);
+int power(int, int);
+int square_root(int);
