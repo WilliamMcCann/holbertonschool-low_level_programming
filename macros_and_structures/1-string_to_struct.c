@@ -21,7 +21,7 @@ char *string_copy(const char *src, int a)
   int i;
   i = 0;
 
-  dest = malloc(sizeof(char) * a);
+  dest = malloc(sizeof(char) * a + 1);
 
   while (src[i] != '\0')
   {
@@ -32,7 +32,9 @@ char *string_copy(const char *src, int a)
 
     dest[i] = src[i];
     i++;
+
   }
+  dest[i] = 0;
   return (dest);
 }
 
@@ -42,7 +44,6 @@ struct String *string_to_struct(char *frommain)
 {
   struct String *str;
   char *var;
-
 
   var = string_copy(frommain, str_len(frommain));
 
